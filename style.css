@@ -264,8 +264,8 @@ body{
     #winorlose{
         position: absolute;
         top:200px;
-        left:40px;
-        width:350px;
+        left:30px;
+        width:250px;
         height:150px;
         z-index: 2;
         font-size: 20px;

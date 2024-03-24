@@ -17,9 +17,9 @@ var answer=document.getElementById("word");
 var start=document.getElementById("start");
 
 var helpBtn=document.getElementById("helpBtn");
-var overlay=document.getElementById("popup-overlay");
+// var overlay=document.getElementById("popup-overlay");
 var popoverlay=document.getElementById("popoverlay");
-var cancelbtn=document.getElementById("cancelpopup");
+// var cancelbtn=document.getElementById("cancelpopup");
 
 var checking=document.getElementById("checking");
 var gameOver=document.getElementById("winorlose");
@@ -83,7 +83,7 @@ function check()
     {
     for(var i=0;i<word.length;i++)
     {
-        if(inputBox.value == word[i])
+        if(inputBox.value.toLowerCase() == word[i])
         {
             var letter=document.getElementById(`${i+1}`);
             letter.textContent=word[i];
