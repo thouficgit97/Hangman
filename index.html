@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Thinking Game</title>
+</head>
+<body>
+    <div >
+        <div id="hollywood" class="design">
+            <span id="ex1">H</span>
+            <span id="ex2">O</span>
+            <span id="ex3">L</span>
+            <span id="ex4">L</span>
+            <span id="ex5">Y</span>
+            <span id="ex6">W</span>
+            <span id="ex7">O</span>
+            <span id="ex8">O</span>
+            <span id="ex9">D</span>
+        </div>   
+        <div class="design">
+            <span class="wrongletters" id="wr1"></span>
+            <span class="wrongletters" id="wr2"></span>
+            <span class="wrongletters" id="wr3"></span>
+            <span class="wrongletters" id="wr4"></span>
+            <span class="wrongletters" id="wr5"></span>
+            <span class="wrongletters" id="wr6"></span>
+            <span class="wrongletters" id="wr7"></span>
+            <span class="wrongletters" id="wr8"></span>
+            <span class="wrongletters" id="wr9"></span>
+        </div> 
+    </div>
+    <div class="box">
+        <div id="word">
+            <span id="1"></span>
+            <span id="2"></span>
+            <span id="3"></span>
+            <span id="4"></span>
+            <span id="5"></span>
+            <span id="6"></span>
+            <span id="7"></span>
+            <span id="8"></span>
+            <span id="9"></span>
+
+        </div>
+    
+        <div class="input">
+            <input type="text" id="inputBox" maxlength="1" placeholder="Enter a letter">
+            <button id="Enter" onclick="check()">Enter</button>
+        </div>
+
+        <div id="checking">
+        </div>
+        <!-- <button><input type="reset"></button> -->
+
+        <!-- <div> -->
+            <!-- <button id="load" onclick="load()">start</button> -->
+        <!-- </div> -->
+
+        <div id="popoverlay">
+
+        </div>
+        <div id="winorlose">
+            <h3 id="result"></h3>
+            <button id="done" onclick="close()">OK!</button>
+            <br/><br>
+            <div>The word is : <h3 id="ans"></h3></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
