@@ -1,4 +1,4 @@
-const words=["hello","ginger","parker","gift","guess","buddy","puppy","bus","frog","lift","bird","chair","table"];
+const words=["hello","ginger","parker","gift","guess","buddy","puppy","bus","frog","lift","bird","chair","table","bucket","king"];
 var rand=Math.floor(Math.random()*15)+1;
 var word=words[rand];
 
@@ -13,13 +13,12 @@ var result=document.getElementById("result");
 var inputBox=document.getElementById("inputBox");
 
 var answer=document.getElementById("word");
-// var startbtn=document.getElementById("load");
+
 var start=document.getElementById("start");
 
 var helpBtn=document.getElementById("helpBtn");
-// var overlay=document.getElementById("popup-overlay");
+var reset=document.getElementById("reset");
 var popoverlay=document.getElementById("popoverlay");
-// var cancelbtn=document.getElementById("cancelpopup");
 
 var checking=document.getElementById("checking");
 var gameOver=document.getElementById("winorlose");
@@ -28,23 +27,13 @@ var okbtn=document.getElementById("done");
 var wrongCount=0;
 var correctCount=0;
 
+reset.addEventListener("click",function(){
+    window.location.reload();
+})
 inputBox.addEventListener("keypress",function(event){
     if(event.key=="Enter")
         check();
 })
-
-/*function load()
-{
-    startbtn.style.display="block";
-    for(var i=0;i<word.length;i++){
-        var letter=document.getElementById(`${i+1}`);
-        letter.textContent='_';
-        answer.appendChild(letter);
-    }
-    startbtn.style.display="none";
-}*/
-
-
 
 function help(){
     overlay.style.display="block";
@@ -95,7 +84,7 @@ function check()
     }
     if(flag==1)
     {
-          checking.textContent="Correct !";
+          checking.textContent="Correct!";
           checking.style.color="green";
     }
     else
